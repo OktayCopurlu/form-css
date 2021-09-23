@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
+    <title>forms</title>
+</head>
+
+<body>
+
+    <h1>Profil</h1>
+    <p>Hier können Sie Iher Adress-Angaen einsehen und anpassen.</p>
+    <form>
+        <fieldset>
+            <legend>Persönliche Daten</legend>
+
+            <label for="title"> Title </label>
+            <input type="text" id="title" name="title" placeholder="Dr. hc" />
+
+            <label for="vorname">vorname</label>
+            <input type="text" id="vorname" placeholder="Peter" />
+
+            <label for="nachname">Nachname</label>
+            <input type="text" id="nachname" placeholder="Muster" />
+
+            <span>Geschlecht</span>
+            <div>
+                <input type="radio" id="gender-m" name="gender" /><label for="gender-m"
+                    id="gender-label-m">M</label><input type="radio" name="gender" id="gender-n" /><label for="gender-n"
+                    id="gender-label-n">W</label>
+            </div>
+            <span>Sprache</span>
+            <div>
+                <input type="radio" id="language-de" name="language" /><label for="language-de"
+                    id="language-label-de">DE</label><input type="radio" name="language" id="language-fr" /><label
+                    for="language-fr" id="language-label-fr">FR</label><input type="radio" name="language"
+                    id="language-it" /><label for="language-it" id="language-label-it">IT</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Kontaktdaten</legend>
+            <label for="tel">Telefon</label>
+            <input type="tel" name="tel" id="tel" required />
+
+            <label for="mobile">Mobile</label>
+            <input type="tel" name="mobile" id="mobile" placeholder="optional" />
+
+            <label for="hauptnummer">Hauptnummer</label>
+            <input type="tel" name="hauptnummer" id="hauptnummer" placeholder="optional" />
+
+            <label for="fax">Fax</label>
+            <input type="tel" name="fax" id="fax" placeholder="optional" />
+
+            <label for="email1">Mail 1</label>
+            <input type="email" name="email1" id="email1" required />
+
+            <label for="email2">Mail 2</label>
+            <input type="email" name="email2" id="email2" placeholder="optional" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Adressdaten</legend>
+
+            <label for="firma">Firma</label>
+            <input type="text" name="firma" id="firma" required />
+
+            <label for="zfirma">Zusatz Firma</label>
+            <input type="text" name="zfirma" id="zfirma" placeholder="optional" />
+
+            <label for="homepage">Home Page</label>
+            <input type="url" id="homepage" name="homepage" placeholder="optional" />
+
+            <label for="adresse">Adresse/ Haus Nr</label>
+            <section>
+                <input type="text" id="adresse" placeholder="Musterstrasse" />
+                <input type="number" id="number" placeholder="33" min="1" />
+            </section>
+
+            <label for="zadresse">Zusatz Adresse</label>
+            <input type="text" id="zadresse" placeholder="optional" />
+
+            <label for="postfach">Postfach</label>
+            <input type="text" id="postfach" placeholder="optional" />
+
+            <label for="plz">PLZ/ Ort</label>
+            <section>
+                <input type="number" id="plz" placeholder="8800" min="0001" />
+                <input type="text" id="ort" placeholder="Musterstadt" />
+            </section>
+
+            <label for="kanton/land">Kanton/ Land</label>
+            <section>
+                <input type="text" id="kanton" placeholder="ZH" />
+                <input type="text" id="land" placeholder="Schweiz" />
+            </section>
+
+        </fieldset>
+        <button type="submit">Speichern</button>
+    </form>
+</body>
+
+</html>
