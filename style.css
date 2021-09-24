@@ -1,7 +1,6 @@
 html{
     font-size: 10px;
     background-color: gray;
-
 }
 
 *{
@@ -44,7 +43,6 @@ fieldset div{
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-
 }
 fieldset div label{
     border: 1px solid gray;
